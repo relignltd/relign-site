@@ -251,16 +251,18 @@
             <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
                 <div class="grid grid-cols-1 lg:grid-cols-5">
                     
-                    <!-- Contact Info -->
+                    <!-- Contact Info (Enhanced with interactive Social Icons) -->
                     <div class="lg:col-span-2 bg-brand text-white p-10 md:p-12 flex flex-col justify-between relative overflow-hidden">
                         <!-- Decorative background -->
                         <div class="absolute bottom-0 right-0 opacity-10 transform translate-x-1/4 translate-y-1/4">
                             <i data-lucide="hexagon" class="w-64 h-64"></i>
                         </div>
                         
-                        <div class="relative z-10">
-                            <h3 class="text-3xl font-bold mb-2">Get in touch</h3>
-                            <p class="text-blue-200 mb-10">Ready to rethink your digital strategy? We'd love to hear from you.</p>
+                        <div class="relative z-10 space-y-10">
+                            <div>
+                                <h3 class="text-3xl font-bold mb-2">Get in touch</h3>
+                                <p class="text-blue-200">Ready to rethink your digital strategy? We'd love to hear from you.</p>
+                            </div>
                             
                             <div class="space-y-8">
                                 <div class="flex items-start">
@@ -289,6 +291,21 @@
                                         <h4 class="font-semibold text-lg mb-1">Email Us</h4>
                                         <a href="mailto:info@relign.co.uk" class="text-blue-100 hover:text-white transition-colors">info@relign.co.uk</a>
                                     </div>
+                                </div>
+                            </div>
+
+                            <!-- Social Links Block -->
+                            <div class="pt-6 border-t border-white/10">
+                                <h4 class="font-semibold text-sm uppercase tracking-wider text-blue-300 mb-4">Connect With Us</h4>
+                                <div class="flex gap-4">
+                                    <!-- Facebook -->
+                                    <a href="https://www.facebook.com/relignltd/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-blue-800/40 border border-blue-700 hover:bg-white hover:text-brand flex items-center justify-center transition-all text-blue-100 hover:scale-110 shadow-sm" title="Facebook">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                                    </a>
+                                    <!-- Instagram -->
+                                    <a href="https://www.instagram.com/relignltd/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-blue-800/40 border border-blue-700 hover:bg-white hover:text-brand flex items-center justify-center transition-all text-blue-100 hover:scale-110 shadow-sm" title="Instagram">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -335,15 +352,55 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800 mt-auto">
+    <footer class="bg-gray-900 text-gray-400 py-16 border-t border-gray-800 mt-auto">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                <div class="flex items-center">
-                    <span class="text-white font-bold text-2xl tracking-tight">Relign</span>
-                    <span class="ml-2 text-sm">Ltd</span>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-gray-800">
+                <!-- Branding column -->
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <span class="text-white font-bold text-2xl tracking-tight">Relign</span>
+                        <span class="ml-1 text-xs text-brand-light font-semibold bg-blue-900/40 px-1.5 py-0.5 rounded border border-blue-800">Ltd</span>
+                    </div>
+                    <p class="text-sm text-gray-400 max-w-sm">
+                        Bespoke AI development, automation, and digital modernization services engineered specifically to scale UK SMEs.
+                    </p>
                 </div>
-                <div class="text-sm">
-                    &copy; <span id="year"></span> Relign Ltd. All rights reserved.
+                
+                <!-- Navigation links column -->
+                <div class="space-y-4 md:pl-8">
+                    <h4 class="text-sm font-semibold text-white uppercase tracking-wider">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Social Connections & Media column -->
+                <div class="space-y-4">
+                    <h4 class="text-sm font-semibold text-white uppercase tracking-wider">Follow Our Updates</h4>
+                    <p class="text-sm text-gray-400">Discover insights on modern workflow redesign on our social feeds.</p>
+                    <div class="flex gap-3">
+                        <!-- Facebook Link -->
+                        <a href="https://www.facebook.com/relignltd/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-800 border border-gray-700 hover:border-blue-500 hover:text-white flex items-center justify-center transition-all text-gray-400 hover:scale-110" title="Follow Relign on Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <!-- Instagram Link -->
+                        <a href="https://www.instagram.com/relignltd/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-800 border border-gray-700 hover:border-pink-500 hover:text-white flex items-center justify-center transition-all text-gray-400 hover:scale-110" title="Follow Relign on Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom copyright line -->
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4 pt-8 text-xs text-gray-500">
+                <div>
+                    &copy; <span id="year"></span> Relign Ltd. All rights reserved. Registered in the United Kingdom.
+                </div>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:underline">Privacy Policy</a>
+                    <a href="#" class="hover:underline">Terms of Service</a>
                 </div>
             </div>
         </div>
